@@ -223,7 +223,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Connect With Us**
 
-[![Website](https://img.shields.io/badge/Website-quotify.app-purple?style=for-the-badge)](https://quotify.dhruvchheda.com)
+[![Website](https://img.shields.io/badge/Website-quotify-purple?style=for-the-badge)](https://quotify.dhruvchheda.com)
 
 </div>
 
