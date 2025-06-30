@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xsi:schemaLocation="http://www.google.com/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://quotify.app/</loc>
+    <lastmod>2024-01-15T10:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://quotify.app/og-image.jpg</image:loc>
+      <image:title>Quotify - Daily Inspiration &amp; Motivational Quotes</image:title>
+      <image:caption>Beautiful quote generator with daily inspirational quotes</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Quote Generator -->
+  <url>
+    <loc>https://quotify.app/#quote-generator</loc>
+    <lastmod>2024-01-15T10:00:00+00:00</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Features Section -->
+  <url>
+    <loc>https://quotify.app/#features</loc>
+    <lastmod>2024-01-15T10:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Download Section -->
+  <url>
+    <loc>https://quotify.app/#download</loc>
+    <lastmod>2024-01-15T10:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Privacy Policy (if you create one) -->
+  <url>
+    <loc>https://quotify.app/privacy</loc>
+    <lastmod>2024-01-15T10:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <!-- Terms of Service (if you create one) -->
+  <url>
+    <loc>https://quotify.app/terms</loc>
+    <lastmod>2024-01-15T10:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+</urlset> 

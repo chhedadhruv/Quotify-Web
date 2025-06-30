@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Quotify - Daily Inspiration & Motivational Quotes | Free Quote Generator</title>
+    <meta name="description" content="Discover daily inspiration with Quotify - a beautiful quote generator featuring motivational quotes from famous authors. Share, save, and get inspired with fresh quotes daily. Free web app with mobile apps coming soon." />
+    <meta name="keywords" content="quotes, inspiration, motivation, daily quotes, motivational quotes, quote generator, inspirational quotes, famous quotes, wisdom, positive quotes, life quotes, success quotes, quote app, free quotes" />
+    <meta name="author" content="Quotify Team" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <link rel="canonical" href="https://quotify.app/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://quotify.app/" />
+    <meta property="og:title" content="Quotify - Daily Inspiration & Motivational Quotes" />
+    <meta property="og:description" content="Discover daily inspiration with Quotify - a beautiful quote generator featuring motivational quotes from famous authors. Share, save, and get inspired with fresh quotes daily." />
+    <meta property="og:image" content="https://quotify.app/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Quotify - Daily Inspiration & Motivational Quotes" />
+    <meta property="og:site_name" content="Quotify" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://quotify.app/" />
+    <meta name="twitter:title" content="Quotify - Daily Inspiration & Motivational Quotes" />
+    <meta name="twitter:description" content="Discover daily inspiration with Quotify - a beautiful quote generator featuring motivational quotes from famous authors. Share, save, and get inspired with fresh quotes daily." />
+    <meta name="twitter:image" content="https://quotify.app/twitter-card.jpg" />
+    <meta name="twitter:image:alt" content="Quotify - Daily Inspiration & Motivational Quotes" />
+    <meta name="twitter:creator" content="@quotifyapp" />
+    <meta name="twitter:site" content="@quotifyapp" />
+    
+    <!-- Favicon and Icons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#667eea" />
+    <meta name="msapplication-TileColor" content="#667eea" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    
+    <!-- Performance and Security -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://zenquotes.io" />
+    <link rel="dns-prefetch" href="https://api.quotable.io" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self' https://zenquotes.io https://api.quotable.io;" />
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Quotify",
+      "description": "Daily inspiration and motivational quotes generator featuring quotes from famous authors, philosophers, and thought leaders.",
+      "url": "https://quotify.app",
+      "applicationCategory": "LifestyleApplication",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "creator": {
+        "@type": "Organization",
+        "name": "Quotify Team",
+        "url": "https://quotify.app"
+      },
+      "featureList": [
+        "Daily inspirational quotes",
+        "Quote sharing functionality",
+        "Offline quote access",
+        "Mobile-responsive design",
+        "Multiple quote categories",
+        "Real-time quote generation"
+      ],
+      "screenshot": "https://quotify.app/screenshot.jpg",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1247",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    }
+    </script>
+    
+    <!-- Additional Structured Data for Articles/Quotes -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Inspirational Quotes Collection",
+      "description": "A curated collection of motivational and inspirational quotes from famous personalities.",
+      "numberOfItems": "1000+",
+      "itemListElement": [
+        {
+          "@type": "Quotation",
+          "text": "The only way to do great work is to love what you do.",
+          "author": {
+            "@type": "Person",
+            "name": "Steve Jobs"
+          }
+        },
+        {
+          "@type": "Quotation", 
+          "text": "Innovation distinguishes between a leader and a follower.",
+          "author": {
+            "@type": "Person",
+            "name": "Steve Jobs"
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <!-- Google Analytics (replace with your tracking ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://quotify.app/sitemap.xml
+
+# Crawl delay (optional, helps with server load)
+Crawl-delay: 1
+
+# Block access to admin or development files
+Disallow: /admin/
+Disallow: /.env
+Disallow: /config/
+Disallow: /src/
+
+# Allow important files
+Allow: /favicon.ico
+Allow: /manifest.json
+Allow: /og-image.jpg
+Allow: /twitter-card.jpg
+
+# Specific bot instructions
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: / 
