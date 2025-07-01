@@ -37,6 +37,8 @@ export default defineConfig({
   server: {
     // Enable compression
     compress: true,
+    // Handle SPA routing in development
+    historyApiFallback: true,
   },
   
   // SEO-friendly static assets
