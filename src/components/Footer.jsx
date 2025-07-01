@@ -1,5 +1,6 @@
 import React from 'react';
 import { HiStar, HiHeart } from 'react-icons/hi';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
@@ -36,7 +37,11 @@ const Footer = () => {
         <div className="footer-bottom">
           <div className="footer-bottom-content">
             <p>&copy; {currentYear} Quotify. All rights reserved.</p>
-            <p>Made with <HiHeart style={{ color: '#e74c3c', display: 'inline' }} /> for daily inspiration</p>
+            <div className="footer-legal">
+              <Link to="/privacy-policy" className="footer-link">Privacy Policy</Link>
+              <span className="footer-separator">•</span>
+              <span>Made with <HiHeart style={{ color: '#e74c3c', display: 'inline' }} /> for daily inspiration</span>
+            </div>
           </div>
         </div>
       </div>
