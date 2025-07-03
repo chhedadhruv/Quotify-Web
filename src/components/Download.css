@@ -1,9 +1,12 @@
 .download {
   background: #f8f9fa;
   padding: 100px 20px;
+  width: 100%;
 }
 
 .download-container {
+  max-width: 1200px;
+  margin: 0 auto;
   width: 100%;
 }
 
@@ -167,6 +170,10 @@
     max-width: 500px;
     margin: 0 auto;
   }
+  
+  .feature-item {
+    text-align: center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -183,7 +190,7 @@
   }
   
   .feature-item {
-    text-align: left;
+    text-align: center;
   }
   
   .app-store-buttons {
@@ -197,7 +204,6 @@
   }
   
   .feature-item {
-    flex-direction: column;
     text-align: center;
     gap: 0.5rem;
   }
@@ -228,5 +234,61 @@
   
   .download-footer p {
     font-size: 1rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 320px) {
+  .download {
+    padding: 50px 12px;
+  }
+  
+  .download-content {
+    gap: 1.5rem;
+  }
+  
+  .download-features {
+    gap: 1.25rem;
+  }
+  
+  .feature-item {
+    text-align: center;
+    gap: 0.4rem;
+  }
+  
+  .feature-icon {
+    font-size: 1.3rem;
+  }
+  
+  .feature-item h4 {
+    font-size: 1rem;
+  }
+  
+  .feature-item p {
+    font-size: 0.9rem;
+  }
+  
+  .app-store-buttons {
+    max-width: 200px;
+  }
+  
+  .app-store-btn {
+    padding: 0.5rem 0.8rem;
+  }
+  
+  .btn-title {
+    font-size: 1rem;
+  }
+  
+  .btn-subtitle {
+    font-size: 0.8rem;
+  }
+  
+  .download-footer {
+    padding: 1.25rem;
+  }
+  
+  .download-footer p {
+    font-size: 0.9rem;
   }
 } 

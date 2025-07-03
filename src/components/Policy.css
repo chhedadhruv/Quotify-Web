@@ -226,4 +226,62 @@
   .privacy-footer {
     padding: 1.5rem 1rem;
   }
+}
+
+/* Extra small screens */
+@media (max-width: 320px) {
+  .privacy-header {
+    padding: 1.25rem 0.75rem 0.75rem;
+  }
+  
+  .privacy-title {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .privacy-title h1 {
+    font-size: 1.6rem;
+  }
+  
+  .privacy-icon {
+    font-size: 2rem;
+  }
+  
+  .privacy-subtitle {
+    font-size: 1rem;
+  }
+  
+  .privacy-content {
+    padding: 1.25rem 0.75rem;
+  }
+  
+  .policy-section {
+    margin-bottom: 2rem;
+  }
+  
+  .policy-section h2 {
+    font-size: 1.2rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .policy-section h3 {
+    font-size: 1.1rem;
+  }
+  
+  .policy-section p {
+    font-size: 0.95rem;
+  }
+  
+  .contact-info {
+    padding: 0.75rem;
+  }
+  
+  .privacy-footer {
+    padding: 1.25rem 0.75rem;
+  }
+  
+  .privacy-footer p {
+    font-size: 0.9rem;
+  }
 } 

@@ -1,15 +1,18 @@
 .features {
   background: #f8f9fa;
   padding: 100px 20px;
+  width: 100%;
 }
 
 .features-container {
+  max-width: 1200px;
+  margin: 0 auto;
   width: 100%;
 }
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
   gap: 2rem;
   margin-bottom: 4rem;
 }
@@ -125,5 +128,36 @@
   
   .cta-text {
     font-size: 1rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 320px) {
+  .features {
+    padding: 50px 12px;
+  }
+  
+  .feature-card {
+    padding: 1.25rem 0.75rem;
+  }
+  
+  .feature-icon {
+    font-size: 1.8rem;
+  }
+  
+  .feature-title {
+    font-size: 1.1rem;
+  }
+  
+  .feature-description {
+    font-size: 0.9rem;
+  }
+  
+  .features-cta {
+    padding: 1.25rem 0.75rem;
+  }
+  
+  .cta-text {
+    font-size: 0.95rem;
   }
 } 

@@ -3,11 +3,13 @@
   min-height: 80vh;
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .quote-generator-container {
-  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .quote-card-container {
@@ -180,5 +182,49 @@
   .offline-indicator {
     font-size: 0.8rem;
     padding: 0.4rem 0.8rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 320px) {
+  .quote-generator {
+    padding: 50px 12px;
+  }
+  
+  .quote-card {
+    padding: 1.5rem 1rem;
+  }
+  
+  .quote-text {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  
+  .quote-author {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+  
+  .quote-mark {
+    font-size: 2rem;
+  }
+  
+  .quote-header {
+    margin-bottom: 1.25rem;
+  }
+  
+  .offline-indicator {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.7rem;
+  }
+  
+  .quote-actions {
+    gap: 0.75rem;
+  }
+  
+  .quote-actions .btn {
+    max-width: 180px;
+    font-size: 0.8rem;
+    padding: 10px 16px;
   }
 } 

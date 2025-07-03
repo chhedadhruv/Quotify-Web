@@ -20,18 +20,6 @@ const Footer = () => {
               Discover beautiful quotes that uplift your spirit and brighten your day.
             </p>
           </div>
-          
-          <div className="footer-links">
-            <div className="link-group">
-              <h4>Product</h4>
-              <ul>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#quote-generator">Quote Generator</a></li>
-                <li><a href="#download">Download</a></li>
-                <li><a href="#">Widgets</a></li>
-              </ul>
-            </div>
-          </div>
         </div>
         
         <div className="footer-bottom">
