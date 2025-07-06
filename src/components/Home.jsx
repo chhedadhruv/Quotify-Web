@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from './Hero';
 import Features from './Features';
 import QuoteGenerator from './QuoteGenerator';
+import ApiSection from './ApiSection';
 import Download from './Download';
 import Footer from './Footer';
 
@@ -28,6 +29,11 @@ const Home = () => {
         {/* Quote Generator section */}
         <section id="quote-generator" aria-labelledby="quote-generator-heading">
           <QuoteGenerator />
+        </section>
+        
+        {/* API section */}
+        <section id="api" aria-labelledby="api-heading">
+          <ApiSection />
         </section>
         
         {/* Download section */}
