@@ -47,7 +47,12 @@ const Download = () => {
           
           <div className="download-buttons">
             <div className="app-store-buttons">
-              <div className="app-store-btn ios-btn coming-soon">
+              <a 
+                href="https://apps.apple.com/us/app/quotify-daily-inspiration/id6752856211" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="app-store-btn ios-btn"
+              >
                 <div className="btn-content">
                   <div className="btn-icon">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -55,13 +60,18 @@ const Download = () => {
                     </svg>
                   </div>
                   <div className="btn-text">
-                    <div className="btn-subtitle">Coming Soon on</div>
+                    <div className="btn-subtitle">Download on the</div>
                     <div className="btn-title">App Store</div>
                   </div>
                 </div>
-              </div>
+              </a>
               
-              <div className="app-store-btn android-btn coming-soon">
+              <a 
+                href="https://play.google.com/store/apps/details?id=com.dhruvchheda.quotify" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="app-store-btn android-btn"
+              >
                 <div className="btn-content">
                   <div className="btn-icon">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -69,19 +79,19 @@ const Download = () => {
                     </svg>
                   </div>
                   <div className="btn-text">
-                    <div className="btn-subtitle">Coming Soon on</div>
+                    <div className="btn-subtitle">Get it on</div>
                     <div className="btn-title">Google Play</div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
         
         <div className="download-footer">
           <p>
-            <strong>Coming Soon:</strong> The app is currently in development and will be available on iOS and Android soon. 
-            Stay tuned for updates!
+            <strong>Available Now:</strong> Download Quotify on iOS and Android to start your daily inspiration journey. 
+            Get access to 2,000+ quotes, beautiful widgets, and offline functionality!
           </p>
         </div>
       </div>
