@@ -7,6 +7,8 @@
   position: relative;
   color: white;
   text-align: center;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .hero-content {
@@ -15,8 +17,10 @@
   gap: 4rem;
   align-items: center;
   width: 100%;
+  max-width: 100%;
   padding: 0 2rem;
   z-index: 2;
+  box-sizing: border-box;
 }
 
 .hero-text {
@@ -60,12 +64,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .floating-quotes {
   position: relative;
   width: 100%;
   height: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .quote-bubble {
@@ -76,8 +85,11 @@
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   max-width: 280px;
+  width: 100%;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  word-wrap: break-word;
 }
 
 .quote-bubble p {
@@ -95,20 +107,26 @@
 
 .quote-1 {
   top: 10%;
-  left: 10%;
+  left: 5%;
+  right: auto;
   animation: float 4s ease-in-out infinite;
+  max-width: calc(100% - 10px);
 }
 
 .quote-2 {
   top: 40%;
   right: 5%;
+  left: auto;
   animation: float 4s ease-in-out infinite 1s;
+  max-width: calc(100% - 10px);
 }
 
 .quote-3 {
   bottom: 15%;
-  left: 20%;
+  left: 5%;
+  right: auto;
   animation: float 4s ease-in-out infinite 2s;
+  max-width: calc(100% - 10px);
 }
 
 .hero-scroll-indicator {
@@ -173,16 +191,28 @@
 }
 
 @media (max-width: 768px) {
+  .hero {
+    min-height: 90vh;
+  }
+  
+  .hero-content {
+    gap: 2.5rem;
+    padding: 0 1.5rem;
+  }
+  
   .hero-title {
     font-size: 2.8rem;
+    margin-bottom: 1.25rem;
   }
   
   .hero-subtitle {
     font-size: 1.2rem;
+    margin-bottom: 2rem;
   }
   
   .hero-buttons {
     justify-content: center;
+    gap: 1rem;
   }
   
   .hero-visual {
@@ -197,15 +227,25 @@
   .quote-bubble p {
     font-size: 0.85rem;
   }
+  
+  .hero-scroll-indicator {
+    bottom: 1.5rem;
+  }
 }
 
 @media (max-width: 480px) {
+  .hero {
+    min-height: 85vh;
+  }
+  
   .hero-content {
     padding: 0 1rem;
+    gap: 2rem;
   }
   
   .hero-title {
     font-size: 2.2rem;
+    line-height: 1.2;
   }
   
   .hero-logo {
@@ -214,11 +254,13 @@
   
   .hero-subtitle {
     font-size: 1rem;
+    margin-bottom: 1.5rem;
   }
   
   .hero-buttons {
     flex-direction: column;
     align-items: center;
+    gap: 0.75rem;
   }
   
   .hero-visual {
@@ -228,5 +270,77 @@
   .quote-bubble {
     max-width: 180px;
     padding: 0.8rem;
+  }
+  
+  .quote-bubble p {
+    font-size: 0.8rem;
+  }
+  
+  .quote-bubble span {
+    font-size: 0.75rem;
+  }
+  
+  .hero-scroll-indicator {
+    bottom: 1rem;
+  }
+  
+  .scroll-arrow {
+    font-size: 1.25rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 320px) {
+  .hero-content {
+    padding: 0 0.75rem;
+    gap: 1.5rem;
+  }
+  
+  .hero-title {
+    font-size: 1.9rem;
+  }
+  
+  .hero-logo {
+    font-size: 2.2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+  
+  .hero-visual {
+    height: 200px;
+  }
+  
+  .quote-bubble {
+    max-width: 160px;
+    padding: 0.6rem;
+  }
+  
+  .quote-bubble p {
+    font-size: 0.75rem;
+  }
+  
+  .quote-bubble span {
+    font-size: 0.7rem;
+  }
+}
+
+/* Landscape orientation for mobile devices */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    min-height: 100vh;
+  }
+  
+  .hero-content {
+    gap: 1.5rem;
+  }
+  
+  .hero-visual {
+    height: 200px;
+  }
+  
+  .hero-scroll-indicator {
+    display: none;
   }
 } 

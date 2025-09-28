@@ -5,6 +5,16 @@
   box-sizing: border-box;
 }
 
+/* Prevent horizontal overflow globally */
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+* {
+  max-width: 100%;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -40,6 +50,9 @@ body {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   min-height: 100vh;
   position: relative;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 /* Semantic sections */
@@ -122,12 +135,17 @@ section {
 .section {
   padding: 80px 20px;
   width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .section-container {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .section-title {
@@ -216,6 +234,17 @@ section {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .section {
+    padding: 70px 20px;
+  }
+  
+  .section-container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
+
 @media (max-width: 768px) {
   .section {
     padding: 60px 20px;
@@ -225,10 +254,18 @@ section {
     font-size: 2rem;
   }
   
+  .section-subtitle {
+    font-size: 1.1rem;
+  }
+  
   .btn {
     padding: 14px 24px;
     font-size: 0.9rem;
     min-width: 120px;
+  }
+  
+  .card {
+    padding: 1.5rem;
   }
 }
 
@@ -239,16 +276,23 @@ section {
   
   .section-title {
     font-size: 1.8rem;
+    margin-bottom: 2rem;
   }
   
   .section-subtitle {
     font-size: 1rem;
+    margin-bottom: 2rem;
   }
   
   .btn {
     padding: 12px 20px;
     font-size: 0.85rem;
     min-width: 100px;
+  }
+  
+  .card {
+    padding: 1.25rem;
+    border-radius: 16px;
   }
 }
 
@@ -260,10 +304,12 @@ section {
   
   .section-title {
     font-size: 1.6rem;
+    margin-bottom: 1.5rem;
   }
   
   .section-subtitle {
     font-size: 0.95rem;
+    margin-bottom: 1.5rem;
   }
   
   .btn {
@@ -271,5 +317,28 @@ section {
     font-size: 0.8rem;
     min-width: 80px;
     gap: 6px;
+  }
+  
+  .card {
+    padding: 1rem;
+    border-radius: 12px;
+  }
+}
+
+/* Landscape orientation for mobile devices */
+@media (max-height: 500px) and (orientation: landscape) {
+  .section {
+    padding: 30px 20px;
+  }
+  
+  .hero {
+    min-height: 80vh;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .btn {
+    border-width: 0.5px;
   }
 }
